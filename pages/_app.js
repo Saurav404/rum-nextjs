@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           var head = si.querySelector("head"),
             js = si.createElement("script");
             // use script.js file as src
-          js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@5c3e259/rum.js";
+          js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@6bc2606/rum.js";
           vi.rumv.storage = s;
           head.appendChild(js);
         })("2F7D77C9C7", window, document, location, "rum-nextjs-project.vercel.app")`,
