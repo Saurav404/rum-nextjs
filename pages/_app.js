@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }) {
               head.appendChild(js);
           })('2F7D77C9C7', window, document, location, 'rum-nextjs-project.vercel.app')`,
         }}
+        
       />
       <Component {...pageProps} />
     </>
