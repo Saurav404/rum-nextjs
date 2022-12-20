@@ -16,10 +16,10 @@ function MyApp({ Component, pageProps }) {
               }
               
               var head = si.querySelector('head'), js = si.createElement('script');
-              js.src = 'https://cdn.jsdelivr.net/gh/Saurav404/rum-script@6bc2606/rum.js';
+              js.src = 'https://d5yoctgpv4cpx.cloudfront.net/RUM-'+rum+'/v3-'+on.hostname+'.js';
               vi.rumv.storage = s;
               head.appendChild(js);
-          })('2F7D77C9C7', window, document, location, 'rum-nextjs-project.vercel.app')`,
+          })( '11302585E0', window, document, location, 'rum-nextjs.vercel.app' )`,
         }}
 
       />
