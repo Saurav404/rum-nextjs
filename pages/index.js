@@ -58,9 +58,11 @@ export default function Home() {
       </main>
 
       <Link href="https://rum-nextjs-project.vercel.app/homepage">
-        <Box p="2rem">
-          <button>this is to test url</button>
-        </Box>
+        <a>
+          <Box p="2rem">
+            <button>this is to test url</button>
+          </Box>
+        </a>
       </Link>
     </div>
   );
