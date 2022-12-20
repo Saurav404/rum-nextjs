@@ -1,10 +1,9 @@
 import "../styles/globals.css";
 import Script from "next/script";
-import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    return (
+  return (
+    <>
       <Script
         id="my-script"
         dangerouslySetInnerHTML={{
@@ -22,10 +21,6 @@ function MyApp({ Component, pageProps }) {
           })('2F7D77C9C7', window, document, location, 'rum-nextjs-project.vercel.app')`,
         }}
       />
-    );
-  }, []);
-  return (
-    <>
       <Component {...pageProps} />
     </>
   );
