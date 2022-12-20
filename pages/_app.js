@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script
         strategy="afterInteractive"
+        id="my-script"
         dangerouslySetInnerHTML={{
           __html: `window.rumv = window.rumv || function() { (window.rumv.q = window.rumv.q || []).push(arguments) };
           (function(rum, vi,si,on) {
@@ -20,7 +21,7 @@ function MyApp({ Component, pageProps }) {
               head.appendChild(js);
           })('2F7D77C9C7', window, document, location, 'rum-nextjs-project.vercel.app')`,
         }}
-        
+
       />
       <Component {...pageProps} />
     </>
