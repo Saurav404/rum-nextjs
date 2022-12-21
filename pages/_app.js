@@ -1,9 +1,11 @@
 import "../styles/globals.css";
 import Script from "next/script";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
+        id="script"
         dangerouslySetInnerHTML={{
           __html: `window.rumv = window.rumv || function() { (window.rumv.q = window.rumv.q || []).push(arguments) };
     (function(rum, vi,si,on) {
