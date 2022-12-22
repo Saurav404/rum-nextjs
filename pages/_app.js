@@ -1,6 +1,10 @@
 import "../styles/globals.css";
 import Script from "next/script";
 
+export function reportWebVitals(metric) {
+  console.log(metric)
+}
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
