@@ -1,8 +1,13 @@
 import "../styles/globals.css";
 import Script from "next/script";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
+const router = useRouter();
 export function reportWebVitals(metric) {
-  console.log(metric)
+  useEffect(() => {
+    console.log(metric);
+  }, [router]);
 }
 
 function MyApp({ Component, pageProps }) {
