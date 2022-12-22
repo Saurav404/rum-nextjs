@@ -3,9 +3,9 @@ import Script from "next/script";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-const router = useRouter();
-console.log(router);
 export function reportWebVitals(metric) {
+  const router = useRouter();
+  console.log(router);
   console.log(metric);
 }
 
