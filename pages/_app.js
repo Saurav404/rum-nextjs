@@ -4,10 +4,9 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 const router = useRouter();
+console.log(router);
 export function reportWebVitals(metric) {
-  useEffect((metric) => {
-    console.log(metric);
-  }, [router,metric]);
+  console.log(metric);
 }
 
 function MyApp({ Component, pageProps }) {
