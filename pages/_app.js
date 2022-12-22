@@ -7,7 +7,7 @@ const router = useRouter();
 export function reportWebVitals(metric) {
   useEffect(() => {
     console.log(metric);
-  }, [router]);
+  }, [router,metric]);
 }
 
 function MyApp({ Component, pageProps }) {
