@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 const router = useRouter();
 export function reportWebVitals(metric) {
-  useEffect(() => {
+  useEffect((metric) => {
     console.log(metric);
   }, [router,metric]);
 }
