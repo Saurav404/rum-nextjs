@@ -1,11 +1,6 @@
 import "../styles/globals.css";
 import Script from "next/script";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 
-export function reportWebVitals(metric) {
-  console.log(metric);
-}
 
 function MyApp({ Component, pageProps }) {
   return (
