@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
         
           var head = d.querySelector("head"),
             js = d.createElement("script");
-          js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@de56fc5/rum.js";
+          js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@cc98f23/rum.js";
           w.adz.storage = s;
           head.appendChild(js);
         })("2F7D77C9C7")`,
