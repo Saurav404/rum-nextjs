@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
             var js = d.createElement("script");
             js.defer = true;
             js.crossOrigin = "anonymous";
-            js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@f799a9e/rum.js";
+            js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@717ac83/rum.js";
             d.querySelector("head").appendChild(js);
           })(window, document, sessionStorage)`,
         }}
