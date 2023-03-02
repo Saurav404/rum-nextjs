@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
         id="script"
         dangerouslySetInnerHTML={{
           __html: `window.adz = window.adz || function() { (window.adz.q = window.adz.q || []).push(arguments) };
-          (function(vi,si,on, d) {
+          (function(rum, vi,si,on, d) {
               if ( !new RegExp([d].join('|')).test( on.hostname ) ) {
                   return;
               }
