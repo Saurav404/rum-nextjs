@@ -9,9 +9,6 @@ function MyApp({ Component, pageProps }) {
           __html: `window.adz = window.adz || function() { (window.adz.q = window.adz.q || []).push(arguments) };
           debugger;
           (function(rum, vi,si,on, d) {
-              if ( !new RegExp([d].join('|')).test( on.hostname ) ) {
-                  return;
-              }
               debugger;
               var s = JSON.parse( sessionStorage.getItem('adz') || '{"pageviews":0}' ); s.pageviews++;
               if ( s.urls && s.regex && ( s.page = eval('('+s.regex+')')( s.urls, on.pathname ) ) && !s.page.type ) {
@@ -20,7 +17,7 @@ function MyApp({ Component, pageProps }) {
               
               vi.adz.storage = s;
               var head = si.querySelector('head'), js = si.createElement('script');
-              js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@7412987/rum.js";
+              js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@f5d7970/rum.js";
               head.appendChild(js);
           })( '9C5E5F4B26', window, document, location, 'rum-nextjs-project.vercel.app' );`,
         }}
