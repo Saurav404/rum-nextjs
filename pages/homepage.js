@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Box } from "../atoms/Box/Box";
-import { Button } from "../atoms/Button/Button";
+
 
 export default function homepage() {
   return (

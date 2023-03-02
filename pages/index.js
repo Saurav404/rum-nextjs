@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Box } from "../atoms/Box/Box";
-import { Button } from "../atoms/Button/Button";
 import Link from "next/link";
 
 export default function Home() {
@@ -59,9 +57,7 @@ export default function Home() {
 
       <Link href="https://rum-nextjs-project.vercel.app/homepage">
         <a>
-          <Box p="2rem">
-            <button>this is to test url</button>
-          </Box>
+          <button>this is to test url</button>
         </a>
       </Link>
     </div>
