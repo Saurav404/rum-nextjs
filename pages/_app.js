@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
         id="script"
         dangerouslySetInnerHTML={{
           __html: `window.adz = window.adz || function() { (window.adz.q = window.adz.q || []).push(arguments) };
-          (function(rum, vi,si,on, d) {
+          (function(vi,si,on, d) {
               if ( !new RegExp([d].join('|')).test( on.hostname ) ) {
                   return;
               }
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
               var head = si.querySelector('head'), js = si.createElement('script');
               js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@316b89e/rum.js";
               head.appendChild(js);
-          })( '9C5E5F4B26', window, document, location, 'rum-nextjs-project.vercel.app' );`,
+          })(window, document, location, 'rum-nextjs-project.vercel.app');`,
         }}
       />
       <Component {...pageProps} />
