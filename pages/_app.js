@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
               
               vi.adz.storage = s;
               var head = si.querySelector('head'), js = si.createElement('script');
-              js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@b385535/rum.js";
+              js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@d007e74/rum.js";
               head.appendChild(js);
           })( '9C5E5F4B26', window, document, location, 'rum-nextjs-project.vercel.app' );`,
         }}
