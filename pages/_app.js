@@ -6,31 +6,21 @@ function MyApp({ Component, pageProps }) {
       <Script
         id="script"
         dangerouslySetInnerHTML={{
-          __html: `!(function (w, d, s) {
-            w.adz =
-              w.adz ||
-              function () {
-                (w.adz.q = w.adz.q || []).push(arguments);
-              };
-            var l = location;
-            var ss = JSON.parse(s.getItem("adz") || '{"pageviews":0}');
-            ss.pageviews++;
-            if (
-              ss.urls &&
-              ss.regex &&
-              (ss.page = eval("(" + ss.regex + ")")(ss.urls, l.pathname)) &&
-              !ss.page.type
-            ) {
-              return s.setItem("adz", JSON.stringify(ss));
-            }
-          
-            w.adz.storage = ss;
-            var js = d.createElement("script");
-            js.defer = true;
-            js.crossOrigin = "anonymous";
-            js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@2fcdb8c/rum.js";
-            d.querySelector("head").appendChild(js);
-          })(window, document, sessionStorage)`,
+          __html: `window.adz = window.adz || function() { (window.adz.q = window.adz.q || []).push(arguments) };
+          (function(rum, vi,si,on, d) {
+              if ( !new RegExp([d].join('|')).test( on.hostname ) ) {
+                  return;
+              }
+              var s = JSON.parse( sessionStorage.getItem('adz') || '{"pageviews":0}' ); s.pageviews++;
+              if ( s.urls && s.regex && ( s.page = eval('('+s.regex+')')( s.urls, on.pathname ) ) && !s.page.type ) {
+                  return sessionStorage.setItem('adz', JSON.stringify( s ) );
+              }
+              
+              vi.adz.storage = s;
+              var head = si.querySelector('head'), js = si.createElement('script');
+              js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@c20bb96/rum.js";
+              head.appendChild(js);
+          })( '9C5E5F4B26', window, document, location, 'rum-nextjs-project.vercel.app' );`,
         }}
       />
       <Component {...pageProps} />
