@@ -18,9 +18,9 @@ function MyApp({ Component, pageProps }) {
               
               vi.adz.storage = s;
               var head = si.querySelector('head'), js = si.createElement('script');
-              js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@bee1824/rum.js";
+              js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@5eba80b/rum.js";
               head.appendChild(js);
-          })('9C5E5F4B26', window, document, location, 'rum-nextjs-project.vercel.app');`,
+          })( '9C5E5F4B26', window, document, location, 'rum-nextjs-project.vercel.app' );`,
         }}
       />
       <Component {...pageProps} />
