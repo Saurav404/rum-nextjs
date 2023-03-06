@@ -26,8 +26,6 @@ function MyApp({ Component, pageProps }) {
             
               w.adz.storage = ss;
               var js = d.createElement("script");
-              js.defer = true;
-              js.crossOrigin = "anonymous";
               js.src = "https://cdn.jsdelivr.net/gh/Saurav404/rum-script@6144ba5/rum.js";
               d.querySelector("head").appendChild(js);
             })(window, document, sessionStorage);
